@@ -38,7 +38,7 @@ nav {
   width: 100%;
 }
 
-ul {
+.nav__ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -217,7 +217,7 @@ main {
 }
 
 .info-card img {
-  width: 40px;
+  width: 150px;
 }
 
 .info-card h3 {
@@ -245,7 +245,6 @@ footer {
 .contact {
   display: flex;
   justify-content: left;
-  align-items: left;
   flex-direction: column;
   gap: 12px;
   color: var(--text-gray);
@@ -261,7 +260,6 @@ footer {
 .contact-inside {
   display: flex;
   justify-content: center;
-  align-items: left;
   flex-direction: column;
   gap: 10px;
 }
@@ -270,19 +268,20 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  text-align: left;
 }
 
-.contact h2 {
-  font-size: 24px;
-  font-weight: 1000;
+.contact h1 {
+  font-size: 50px;
+  color: var(--text-blue);
 }
 
 .contact-inside h4 {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .contact-inside li {
-  font-size: 17px;
+  font-size: 22px;
 }
 
 p {
@@ -291,6 +290,24 @@ p {
 
 .footer-2 {
   width: 20%;
+}
+
+/* mapa */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 500px;
+  height: 250px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 500px;
+  height: 250px;
+}
+.gmap_iframe {
+  width: 500px !important;
+  height: 250px !important;
 }
 
 .logo-redes img {
