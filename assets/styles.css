@@ -206,7 +206,7 @@ main {
 .info-card {
   width: 300px;
   height: 298px;
-  padding: 40px 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,8 +216,15 @@ main {
   gap: 20px;
 }
 
+.fondo-img {
+  height: 230px;
+  width: 230px;
+  border-radius: 10px;
+  background-color: var(--text-white);
+}
+
 .info-card img {
-  width: 150px;
+  height: 145px;
 }
 
 .info-card h3 {
@@ -308,25 +315,6 @@ p {
 .gmap_iframe {
   width: 500px !important;
   height: 250px !important;
-}
-
-.logo-redes img {
-  width: 30px;
-}
-
-.logo-redes a:hover {
-  transform: scale(1.5);
-
-  border-radius: 15px;
-  transition: 0.5s;
-}
-
-.logo-redes {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 30px;
-  padding-bottom: 20px;
 }
 
 .div-logo {
