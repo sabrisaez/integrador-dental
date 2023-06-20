@@ -111,6 +111,14 @@ body {
   height: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
 .login-box {
   width: 320px;
   height: 420px;
@@ -198,7 +206,11 @@ body {
   padding: 0;
   background: url(../assets/hero-img.jpg) no-repeat center top;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+}
+
+.register {
+  padding-bottom: 200px;
 }
 
 .register-box {
@@ -211,8 +223,9 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  padding: 70px 30px 50px;
+  padding: 70px 30px;
   border-radius: 16px;
+  border: 50px;
 }
 
 .register-box .avatar {
