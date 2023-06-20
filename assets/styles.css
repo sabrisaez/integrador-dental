@@ -401,18 +401,21 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 50px;
   }
 
   .hero h1 {
     font-size: 20px;
     margin-bottom: 20px;
     color: var(--text-blue);
+    width: 100%;
   }
 
   .hero h2 {
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-blue);
+    width: 100%;
   }
 
   .hero a {
@@ -428,5 +431,6 @@ p {
     font-size: 25px;
     border-radius: 16px;
     height: fit-content;
+    text-align: center;
   }
 }
