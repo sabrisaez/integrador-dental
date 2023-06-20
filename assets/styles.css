@@ -451,5 +451,24 @@ p {
 
   .contact-inside {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .mapouter {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+  .gmap_canvas {
+    width: 200px;
   }
 }
