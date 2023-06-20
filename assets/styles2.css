@@ -111,14 +111,6 @@ body {
   height: 100vh;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  width: 100%;
-}
-
 .login-box {
   width: 320px;
   height: 420px;
@@ -292,37 +284,6 @@ body {
 
 .register-box a:hover {
   color: #fff;
-}
-
-/* footer */
-
-footer {
-  background: var(--background);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.div-footer {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 5px;
-  background: var(--btn-bg);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.div-footer h6 {
-  font-size: 15px;
-  color: var(--text-white);
 }
 
 /* MEDIAQUERIES MOBILE */
