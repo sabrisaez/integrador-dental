@@ -352,6 +352,10 @@ p {
 
 /* MEDIAQUERIES MOBILE */
 @media (max-width: 576px) {
+  .navbar {
+    z-index: 999;
+  }
+
   .navbar ul {
     width: 100%;
     position: absolute;
@@ -432,5 +436,20 @@ p {
     border-radius: 16px;
     height: fit-content;
     text-align: center;
+  }
+
+  .contact h1 {
+    text-align: center;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+    gap: 10px;
+  }
+
+  .contact-inside {
+    padding: 20px;
   }
 }

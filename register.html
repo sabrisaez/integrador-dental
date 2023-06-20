@@ -11,23 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
     <link rel="stylesheet" href="assets/styles2.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="navbar">
         <img src="assets/logo.png" class="logo" />
-        <ul class="nav__ul">
-          <li class="nav__link"><a href="index.html#herosection">Inicio</a></li>
-          <li class="nav__link"><a href="index.html#info">Nosotros</a></li>
-          <li class="nav__link">
-            <a href="index.html#tratamientos">Tratamientos</a>
+        <label for="toggle-menu"><i class="fa-solid fa-bars" style="color: #192345;"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="navbar-list">
+          <li class="navbar-link"><a href="index.html#herosection">Inicio</a></li>
+          <li class="navbar-link"><a href="index.html#info">Nosotros</a></li>
+          <li class="navbar-link"><a href="index.html#tratamientos">Tratamientos</a></li>
+          <li class="navbar-link"><a href="index.html#contact">Contacto</a></li>
+          <li class="navbar-login"><a href="login.html">Login Pacientes</a></li>
+          <li class="navbar-register">
+            <a href="register.html">Registrate</a>
           </li>
-          <li class="nav__link"><a href="index.html#contact">Contacto</a></li>
-          <li class="nav__login"><a href="login.html">Login pacientes</a></li>
-          <li class="nav__register"><a href="register.html">Registrate</a></li>
         </ul>
-      </nav>
     </header>
     <section class="register">
       <div class="register-box">
@@ -46,5 +51,10 @@
         </form>
       </div>
     </section>
+    <footer>
+      <div class="div-footer">
+        <h6>Clínica Dental ÍTalo & Catalán © 2023</h6>
+      </div>
+    </footer>
   </body>
 </html>
