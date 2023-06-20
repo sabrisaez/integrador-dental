@@ -37,6 +37,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .navbar ul {
@@ -474,5 +475,37 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+/* MEDIAQUERIES TABLET */
+@media (max-width: 992px) {
+  .contact h1 {
+    text-align: center;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+    gap: 10px;
+  }
+
+  .contact-inside {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-inside h4 {
+    font-size: 30px;
+  }
+
+  .footer-ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
   }
 }
