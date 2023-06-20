@@ -304,3 +304,10 @@ body {
     top: 65%;
   }
 }
+
+/* MEDIAQUERIES MOBILE */
+@media (max-width: 576px) {
+  nav {
+    display: none;
+  }
+}

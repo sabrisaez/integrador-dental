@@ -39,7 +39,7 @@ nav {
   width: 100%;
 }
 
-.nav__ul {
+.navbar ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -62,22 +62,22 @@ ul a {
   width: 150px;
 }
 
-.nav__login {
+.navbar-login {
   background-color: #74767d;
   padding: 5px;
   border-radius: 16px;
 }
 
-.nav__login a {
+.navbar-login a {
   color: white;
 }
-.nav__register {
+.navbar-register {
   background-color: var(--text-blue);
   padding: 5px;
   border-radius: 16px;
 }
 
-.nav__register a {
+.navbar-register a {
   color: white;
 }
 
@@ -86,6 +86,15 @@ a {
 }
 a:hover {
   color: var(--text-gray);
+}
+
+.navbar i {
+  font-size: 36px;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
 }
 
 /* main */
@@ -341,27 +350,52 @@ p {
   color: var(--text-white);
 }
 
-/* MEDIAQUERIES TABLET */
-@media (max-width: 992px) {
-  nav {
-    justify-content: flex-end;
+/* MEDIAQUERIES MOBILE */
+@media (max-width: 576px) {
+  .navbar ul {
+    width: 100%;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background: #fff;
+    gap: 20px;
   }
 
-  .nav__ul {
-    gap: 10px;
-    font-size: 18px;
+  .navbar i {
+    display: block;
+    padding-right: 50px;
   }
 
-  .logo {
-    margin-right: 35px;
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
   }
 
-  .contact h1 {
-    margin: 20px;
+  .navbar-login {
+    background-color: #fff;
   }
 
-  .footer-contact {
-    margin: 20px;
-    gap: 0;
+  .navbar-login a {
+    color: var(--text-blue);
+  }
+  .navbar-register {
+    background-color: #fff;
+  }
+
+  .navbar-register a {
+    color: var(--text-blue);
+  }
+
+  .hero {
+    background: radial-gradient(
+      circle,
+      rgba(255, 242, 248, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    background-size: cover;
+    width: 100%;
   }
 }

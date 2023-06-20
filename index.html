@@ -11,21 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="navbar">
         <img src="assets/logo.png" class="logo" />
-        <ul class="nav__ul">
-          <li class="nav__link"><a href="#herosection">Inicio</a></li>
-          <li class="nav__link"><a href="#info">Nosotros</a></li>
-          <li class="nav__link"><a href="#tratamientos">Tratamientos</a></li>
-          <li class="nav__link"><a href="#contact">Contacto</a></li>
-          <li class="nav__login"><a href="login.html">Login Pacientes</a></li>
-          <li class="nav__register"><a href="register.html">Registrate</a></li>
+        <label for="toggle-menu"><i class="fa-solid fa-bars" style="color: #192345;"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="navbar-list">
+          <li class="navbar-link"><a href="#herosection">Inicio</a></li>
+          <li class="navbar-link"><a href="#info">Nosotros</a></li>
+          <li class="navbar-link"><a href="#tratamientos">Tratamientos</a></li>
+          <li class="navbar-link"><a href="#contact">Contacto</a></li>
+          <li class="navbar-login"><a href="login.html">Login Pacientes</a></li>
+          <li class="navbar-register">
+            <a href="register.html">Registrate</a>
+          </li>
         </ul>
-      </nav>
     </header>
 
     <main>
